@@ -833,7 +833,7 @@ footer ul li a {
   }
 }
 
-@media (max-width: 375PX) {
+@media (max-width: 500PX) {
   .main-container {
     overflow: hidden;
   }
