@@ -428,6 +428,9 @@ main p {
 
 .realisation {
   margin-top: 50px;
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .realisation h5 {
@@ -463,7 +466,7 @@ main p {
   height: 300px;
   position: absolute;
   right: 150px;
-  top: 130px;
+  top: 148px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   background-image: url("/image1/arrow.png");
@@ -522,9 +525,35 @@ main p {
 }
 
 footer {
-  height: 200px;
   background-color: #231F20;
   color: #EAEAEA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer .siret {
+  margin: 15px;
+}
+
+footer .adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px;
+}
+
+footer .adress span {
+  margin-left: 10px;
 }
 
 footer h5 {
@@ -540,7 +569,7 @@ footer ul {
       -ms-flex-direction: column;
           flex-direction: column;
   list-style-type: none;
-  padding-left: 10px;
+  padding-left: 29px;
 }
 
 footer ul li a {
@@ -719,5 +748,143 @@ footer ul li a {
   text-align: center;
   font-weight: 100;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1025PX) {
+  .number {
+    top: 42%;
+  }
+  .explain {
+    margin: 0px 149px;
+  }
+  .our-project .carrousel {
+    width: 268%;
+  }
+  .present .arrow-left {
+    left: 88px;
+  }
+  .present .arrow-right {
+    right: 93px;
+  }
+  footer ul {
+    width: 200PX;
+  }
+  footer .adress {
+    width: 740px;
+    margin-bottom: 13px;
+    margin-left: 72px;
+  }
+  footer .siret {
+    margin: 37px;
+  }
+}
+
+@media (max-width: 768PX) {
+  .logo {
+    margin-left: 4%;
+    margin-top: 3%;
+  }
+  nav ul li {
+    text-decoration: none;
+    margin: 10px;
+    width: 121px;
+  }
+  nav ul li a {
+    margin: 0;
+  }
+  .postheader h3 {
+    width: 324px;
+    left: 4%;
+  }
+  .number {
+    width: 32%;
+    top: 35%;
+  }
+  main h5 {
+    margin: 0px 0 92px 0;
+  }
+  .explain {
+    margin: -3px 72px;
+  }
+  .our-project .carrousel {
+    width: 286%;
+  }
+  .our-project {
+    width: 82%;
+  }
+  .present .arrow-left {
+    left: 26px;
+  }
+  .present .arrow-right {
+    right: 30px;
+  }
+  footer .adress {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer ul {
+    width: 62%;
+  }
+  footer .adress {
+    margin-bottom: 37px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 375PX) {
+  .main-container {
+    overflow: hidden;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo {
+    margin-left: 22%;
+    margin-top: 8%;
+    width: 100%;
+    font-size: 2em;
+  }
+  .logo h2 {
+    margin-left: 44px;
+  }
+  nav ul {
+    margin-top: 30px;
+  }
+  .postheader h3 {
+    display: none;
+  }
+  .banner {
+    margin-top: 86px;
+    width: 100%;
+  }
+  .number {
+    width: 57%;
+    top: 43%;
+    left: 9%;
+    height: 89px;
+    font-size: 15px;
+  }
+  main .description {
+    margin-bottom: 30px;
+    padding: 24px;
+  }
+  main h5 {
+    margin: 57px 0 51px 0;
+    font-size: 2.5em;
+  }
+  .realisation {
+    margin-bottom: 32px;
+  }
+  .explain {
+    margin: -3px 22px;
+  }
+  .our-project .carrousel {
+    width: 652%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
