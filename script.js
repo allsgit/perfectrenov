@@ -15,6 +15,7 @@ console.log(body);
 
 
 function carrouselFunc () {
+    if (window.innerWidth > 400 ) {
 const arrowL = document.querySelector(".arrow-left")
 const arrowR = document.querySelector(".arrow-right")
 let init = 0;
@@ -46,6 +47,7 @@ arrowR.addEventListener('click', () => {
     }
     
 })
+    }
 
 
 }

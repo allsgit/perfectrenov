@@ -747,5 +747,61 @@ main h5 {
 .our-project .carrousel {
   width: 652%;
 }
+
+.our-project .carrousel {
+  /* width: 652%; */
+  height: 418px;
+  flex-direction: column;
+}
+.our-project {
+  width: 100%;
+  /* height: 100%; */
+}
+.thumbnail-1 {
+  margin: 8px auto;
+  position: relative;
+  width: 320px;
+  /* height: 325px; */
+  height: 100%;
+  overflow: hidden;
+
+  border-radius: 10px;
+  color: white;
+
+  transition: 1s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.present .arrow-right {
+
+  display: none;
+}
+.present .arrow-left {
+ 
+  display: none;
+}
+
+.overbox {
+  height: 302px;
+  width: 362px;
+
+}
+.our-project .carrousel {
+  /* width: 652%; */
+  height: 2000px;
+
+}
+.overbox .close {
+  border-radius: 50%;
+  height: 80px;
+  width: 80Px;
+
+  top: 361px;
+  right: 147px;
+
+}
+
+
 }
 
