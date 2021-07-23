@@ -845,9 +845,7 @@ footer ul li a {
     height: 195px;
   }
   .logo {
-    margin-left: 22%;
-    margin-top: 8%;
-    width: 100%;
+    margin: 18px auto;
     font-size: 2em;
   }
   .logo h2 {
@@ -973,7 +971,6 @@ footer ul li a {
     transition: 1s;
     position: absolute;
     left: 157px;
-    width: 50px;
   }
   .hamb span {
     width: 46px;
