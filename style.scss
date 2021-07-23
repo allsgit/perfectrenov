@@ -686,6 +686,9 @@ footer {
 
 
 @media (max-width: 500PX) {
+    a{
+        color: black;
+    }
   .main-container{
     overflow: hidden;
   }
@@ -851,15 +854,19 @@ h5 {
 
     top: 100px;
     z-index: 10000000000000000000;
+    margin: 0 auto;
     -webkit-transition: 1s;
     transition: 1s;
-    position: absolute;
-    left: 157px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 
   span{
     width: 46px;
     height: 3px;
-    margin: 7px 0;
+    margin-top: 10px;
     background-color: white;
     display: block;
     transition: 0.5s;
@@ -870,7 +877,7 @@ h5 {
 
 .resp-menu {
   position: relative;
-  left: -125px;
+  left: 0px;
   top: 3px;
   width: 188px;
   height: 0px;
