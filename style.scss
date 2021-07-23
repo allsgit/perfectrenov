@@ -692,6 +692,7 @@ footer {
 
   header{
     flex-direction: column;
+    height: 195px;
   }
   .logo {
     margin-left: 22%;
@@ -707,6 +708,9 @@ footer {
 nav{
   ul{
     margin-top: 30px;
+    li{
+      display: none;
+    }
   }
 }
 .postheader h3 {
@@ -756,6 +760,7 @@ main h5 {
 .our-project {
   width: 100%;
   /* height: 100%; */
+  margin-bottom: 5Opx;
 }
 .thumbnail-1 {
   margin: 8px auto;
@@ -771,7 +776,19 @@ main h5 {
   transition: 1s;
   text-overflow: ellipsis;
   white-space: nowrap;
+ 
+
+  .h3{
+    display: none;
+  }
+  .etiquette {
+    display: none;
+  }
+
+
+
 }
+
 
 .present .arrow-right {
 
@@ -801,6 +818,78 @@ main h5 {
   right: 147px;
 
 }
+
+footer{
+  flex-direction: column;
+   ul{
+     width:71%;
+   }
+   .adress {
+
+    width: 100%;
+    margin: 20px 0;
+
+}
+h5 {
+  font-size: 1.6em;
+  margin-left: -10px;
+}
+.siret {
+  /* margin: 37px; */
+  margin: 30px auto;
+}
+}
+
+.hamb{
+
+    top: 100px;
+    z-index: 10000000000000000000;
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    left: 157px;
+    width: 50px;
+
+  span{
+    width: 46px;
+    height: 3px;
+    margin: 7px 0;
+    background-color: white;
+    display: block;
+    transition: 1s;
+ 
+  }
+
+}
+
+.resp-menu {
+  position: relative;
+  left: -125px;
+  top: 3px;
+  width: 300px;
+  height: 0px;
+  background-color: white;
+  display: block;
+  z-index: 100000000;
+  -webkit-transition: 1s;
+  transition: 0.6s;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.close {
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  display: none;
+
+}
+
+
 
 
 }

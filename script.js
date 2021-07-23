@@ -9,10 +9,55 @@ scrollEffect()
 
 const carousel = document.querySelector(".carrousel")
 const mainContainer = document.querySelector(".main-container")
-
+const hamburger = document.querySelector(".hamb")
 const body = document.querySelector("body")
 console.log(body);
 
+
+function hambResponsiv () {
+    let isOpen = false
+    hamburger.addEventListener("click", () => {
+        const spanOne = document.querySelector(".hamb-span1")
+        const spanTwo = document.querySelector(".hamb-span2")
+        const spanThree = document.querySelector(".hamb-span3")
+        if (isOpen === false) {
+        spanOne.style.transform = "rotate(50deg)"
+       spanOne.style.opacity = "0"
+        spanTwo.style.transform = "rotate(-50deg)"
+        spanTwo.style.opacity = "0"
+        spanThree.style.opacity = "0"
+        spanThree.style.display = "none"
+        document.querySelector(".resp-menu").style.height = "300px" 
+   
+            document.querySelector(".close").style.display = "block"; 
+       
+        
+        
+        isOpen = true
+        console.log("kii");
+        } else if (isOpen === true) {
+            spanOne.style.transform = "rotate(0deg)"
+            spanOne.style.opacity = "1"
+            spanTwo.style.transform = "rotate(0deg)"
+            spanTwo.style.opacity = "1"
+            spanThree.style.opacity = "1"
+            spanThree.style.display = "block" 
+            document.querySelector(".resp-menu").style.height = "0px" 
+           
+                document.querySelector(".close").style.display = "none"; 
+           
+            
+            
+          
+            
+            isOpen = false
+       
+            
+        } 
+        console.log(isOpen);
+    })
+}
+hambResponsiv()
 
 function carrouselFunc () {
     if (window.innerWidth > 400 ) {
