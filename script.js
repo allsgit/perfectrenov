@@ -27,9 +27,9 @@ function hambResponsiv () {
         spanTwo.style.opacity = "0"
         spanThree.style.opacity = "0"
         spanThree.style.display = "none"
-        document.querySelector(".resp-menu").style.height = "300px" 
+        document.querySelector(".resp-menu").style.height = "243px" 
    
-            document.querySelector(".close").style.display = "block"; 
+            document.querySelector(".close2").style.opacity = "1"; 
        
         
         
@@ -44,7 +44,7 @@ function hambResponsiv () {
             spanThree.style.display = "block" 
             document.querySelector(".resp-menu").style.height = "0px" 
            
-                document.querySelector(".close").style.display = "none"; 
+                document.querySelector(".close2").style.opacity = "0"; 
            
             
             

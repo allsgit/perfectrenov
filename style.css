@@ -10,7 +10,6 @@ a {
 
 li {
   text-decoration: none;
-  margin: 10px;
 }
 
 .overbox {
@@ -931,6 +930,13 @@ footer ul li a {
     height: 302px;
     width: 362px;
   }
+  .overbox .close {
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
   .our-project .carrousel {
     /* width: 652%; */
     height: 2000px;
@@ -985,7 +991,7 @@ footer ul li a {
     position: relative;
     left: -125px;
     top: 3px;
-    width: 300px;
+    width: 188px;
     height: 0px;
     background-color: white;
     display: block;
@@ -999,14 +1005,44 @@ footer ul li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 5px;
   }
-  .close {
-    right: 32px;
-    top: 32px;
+  .resp-menu .responsiv-menu-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 29px auto 0px;
+    padding: 0;
+  }
+  .resp-menu .responsiv-menu-show li {
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 21px;
+  }
+  .resp-menu .responsiv-menu-show li a {
+    color: black;
+    font-size: 1em;
+  }
+  .close2 {
+    position: absolute;
+    right: 140px;
+    top: 5px;
     width: 32px;
     height: 32px;
     opacity: 0.3;
-    display: none;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
   }
 }
 /*# sourceMappingURL=style.css.map */
