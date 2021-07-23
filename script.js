@@ -135,7 +135,7 @@ window.onscroll = () => {
 }
 
 function scrollEffect () {
-    if (window.innerWidth > 1024) {
+    if (window.innerWidth >= 1024) {
     const realisation = document.querySelector(".realisation")
     const explain = document.querySelector(".explain")
     console.log(explain);

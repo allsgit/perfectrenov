@@ -949,6 +949,7 @@ footer ul li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 80px;
   }
   footer ul {
     width: 71%;
@@ -980,8 +981,8 @@ footer ul li a {
     margin: 7px 0;
     background-color: white;
     display: block;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .resp-menu {
     position: relative;
