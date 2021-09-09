@@ -5,13 +5,10 @@ lightboxPop()
 scrollEffect()
 
 // constantes //
-
-
 const carousel = document.querySelector(".carrousel")
 const mainContainer = document.querySelector(".main-container")
 const hamburger = document.querySelector(".hamb")
 const body = document.querySelector("body")
-console.log(body);
 
 
 function hambResponsiv () {
@@ -34,7 +31,6 @@ function hambResponsiv () {
         
         
         isOpen = true
-        console.log("kii");
         } else if (isOpen === true) {
             spanOne.style.transform = "rotate(0deg)"
             spanOne.style.opacity = "1"
@@ -54,7 +50,6 @@ function hambResponsiv () {
        
             
         } 
-        console.log(isOpen);
     })
 }
 hambResponsiv()

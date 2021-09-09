@@ -2,13 +2,18 @@
 .contact-bloc {
   width: 100%;
   height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -18,7 +23,6 @@
 }
 
 .form {
-  margin-left: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,10 +33,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 34%;
+  margin-right: 50px;
 }
 
 .form .firstname, .form .lastname, .form .mail, .form .user-message {
-  width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,9 +48,15 @@
   margin: 10px, 0;
 }
 
+.form p {
+  font-size: 1.5em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .form #usermsg {
   width: 700px;
-  height: 350px;
+  height: 250px;
   font-family: "roboto";
   margin: 36px 0;
   background-color: #f3f1f1;
@@ -67,6 +78,26 @@
 .form .send {
   margin: 0 auto;
   width: 150px;
+  height: 50px;
+}
+
+.info-contact {
+  margin: 100px;
+  border: 1px solid lightgray;
+}
+
+.info-contact p {
+  font-size: 1.4em;
+}
+
+.ul-contact {
+  margin-top: 10px;
+}
+
+.ul-contact .li-contact {
+  list-style-type: none;
+  font-size: 1.3em;
+  margin: 10px;
 }
 
 @font-face {
@@ -734,17 +765,17 @@ footer ul li a {
 }
 
 .explain-services {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0 0 100Px;
 }
 
 .presentation {
@@ -798,8 +829,8 @@ footer ul li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 50%;
-  margin: 0 0 27px 26px;
+  width: 40%;
+  margin: 30px 0 0 0;
 }
 
 .liste-activity h1 {
@@ -824,13 +855,47 @@ footer ul li a {
 }
 
 .descript-services {
-  margin: 48px;
-  width: 50%;
+  width: 35%;
+  font-size: 1.3em;
 }
 
 .descript-services h3 {
   color: #262626;
   font-size: 30px;
+}
+
+.detail-service {
+  margin: 90px 0 auto;
+  font-size: 1.3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-nuancier {
+  height: 500px;
+  width: 30%;
+  margin: 0 0 0 100px;
+}
+
+.img-nuancier img {
+  border-radius: 10px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.img-illustration {
+  width: 34%;
+  margin: 70px 35px 0 0;
+  border-radius: 10px;
+}
+
+.img-illustration img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .close2 {
@@ -844,7 +909,7 @@ footer ul li a {
 }
 
 .italian-shower {
-  margin: 50px  100px;
+  margin: 90px 0 130px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -852,14 +917,15 @@ footer ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  font-size: 1.3em;
 }
 
 .italian-shower .italian-shower-illustration {
-  width: 50%;
+  width: 30%;
   height: 100%;
   margin: 40px 0 0 0;
 }
@@ -875,9 +941,35 @@ footer ul li a {
 }
 
 .italian-shower .explain-italian-shower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 40%;
   line-height: 30Px;
-  margin: 64px;
+  margin: 120px 57Px 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.detail-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.whatwedo {
+  margin: 79px 0 0 0;
 }
 
 @media (max-width: 1025PX) {
@@ -910,7 +1002,7 @@ footer ul li a {
   .img-nuancier {
     margin: 49px 8px 0 0;
     width: 43%;
-    height: 300px;
+    height: 100%;
   }
   .img-nuancier img {
     border-radius: 10px;
@@ -928,6 +1020,13 @@ footer ul li a {
     margin-bottom: 0;
     margin-top: 58px;
   }
+  .descript-services {
+    width: 50%;
+  }
+  .explain-services {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .detail-service {
     height: 485px;
     margin: 50px 0;
@@ -938,11 +1037,13 @@ footer ul li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .detail-service .img-illustration {
-    height: 500px;
-    width: 44%;
-    margin-left: 64px;
+    width: 100%;
+    height: 300px;
     border-radius: 10px;
   }
   .detail-service .img-illustration img {
@@ -958,20 +1059,31 @@ footer ul li a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .detail-service .liste-activity ul {
-    margin: -12px;
-  }
   .italian-shower {
     height: 506px;
-    margin: 50px 100px 103px;
+    margin: 185px 0 104px 0px;
   }
   .italian-shower .explain-italian-shower {
     width: 53%;
     line-height: 30Px;
     margin: 82px 84px 0 0;
   }
-  .img-nuancier {
-    margin: 184px 8px 0 0;
+  .liste-activity {
+    width: 77%;
+  }
+  .form {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .form p {
+    text-align: center;
+    margin: 0 10px;
+  }
+  iframe {
+    width: 90vw;
   }
 }
 
@@ -1028,8 +1140,10 @@ footer ul li a {
     margin-left: 0;
   }
   .img-nuancier {
-    height: 527px;
-    margin: 132px 8px 0 0;
+    width: 105%;
+    height: 300px;
+    margin: 0 49px;
+    margin: 44px 8px 0 0;
   }
   .img-nuancier img {
     width: 100%;
@@ -1046,18 +1160,39 @@ footer ul li a {
   }
   .detail-service {
     height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .detail-service .img-illustration {
-    height: 100%;
+  .detail-service .liste-activity {
+    width: 100%;
   }
   .italian-shower {
-    height: 800px;
-    /* margin: 50px 100px 103px; */
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin: 185px 0 200px 0px;
+  }
+  .italian-shower .italian-shower-illustration {
+    width: 21%;
+    height: 408px;
   }
   .italian-shower .italian-shower-illustration img {
-    height: 80%;
-    padding-top: 68px;
     width: 123%;
+  }
+  .explain-services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 91%;
+  }
+  .explain-services .descript-services {
+    width: 100%;
   }
 }
 
@@ -1069,12 +1204,11 @@ footer ul li a {
     left: 1%;
   }
   .whatwedo h5 {
-    margin: 57px 0 51px 0;
+    margin: 0;
     font-size: 0.8em;
   }
   .descript-services {
-    margin: 48px;
-    width: 100%;
+    width: 91%;
   }
   .descript-services h3 {
     font-size: 19px;
@@ -1087,7 +1221,6 @@ footer ul li a {
   .img-nuancier {
     width: 100%;
     height: 250px;
-    margin: 10px;
   }
   .detail-service {
     height: auto;
@@ -1391,6 +1524,20 @@ footer ul li a {
     opacity: 0.3;
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
+  }
+  .form h1 {
+    text-align: center;
+  }
+  .form input {
+    width: 292px;
+    text-align: center;
+    margin: 0 30px;
+  }
+  .form #usermsg {
+    width: 292px;
+  }
+  label {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

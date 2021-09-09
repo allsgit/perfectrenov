@@ -34,7 +34,6 @@ function hambResponsiv () {
         
         
         isOpen = true
-        console.log("kii");
         } else if (isOpen === true) {
             spanOne.style.transform = "rotate(0deg)"
             spanOne.style.opacity = "1"
@@ -54,11 +53,10 @@ function hambResponsiv () {
        
             
         } 
-        console.log(isOpen);
+        
     })
 }
 hambResponsiv()
-
 function carrouselFunc () {
     if (window.innerWidth > 400 ) {
 const arrowL = document.querySelector(".arrow-left")
@@ -73,7 +71,7 @@ arrowL.addEventListener('click', () => {
         console.log("work");
         init += amount
         carousel.style.transform = `translate(${init}px)`;
-        console.log(init);    
+   
     }
     
 })
@@ -83,12 +81,12 @@ arrowR.addEventListener('click', () => {
     if (initT <= -600 ){
         carousel.style.transform = `translate(0px)`
         initT = 0;
-        console.log(initT);
+ 
     } else {
-        console.log("work");
+  
         initT = initT - amountT
         carousel.style.transform = `translate(${initT}px)`;
-    console.log(initT);    
+    
     }
     
 })
@@ -125,10 +123,6 @@ function lightboxPop () {
         })
     });
 }
-
-
-
-
 window.onscroll = () => {
     let pos = window.scrollY
 
