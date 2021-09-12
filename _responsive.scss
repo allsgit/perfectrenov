@@ -71,7 +71,8 @@
         justify-content: space-between;
         .img-illustration{
             width: 100%;
-            height: 300px;
+            height: 127%;
+            margin-left: 10px;
             border-radius: 10px;
             img{
                 object-fit: cover;
@@ -99,7 +100,7 @@
         }
     }
     .liste-activity{
-        width: 77%;
+        width: 137%;
     }
     .form{
         width: 100%;
@@ -113,6 +114,9 @@
     }
     iframe{
         width: 90vw;
+    }
+    .envoi-reussi{
+        margin: 20px 0 0 0;
     }
 
 
@@ -588,6 +592,9 @@ h5 {
     transition: all 1s ease-out;
   }
   .form{
+    .send{
+        margin-left: 116px;
+    }
 
   h1{
       text-align: center;
@@ -603,6 +610,12 @@ h5 {
 }
 label{
     text-align: center;
+}
+.envoi-reussi {
+    font-size: 30px;
+    color: green;
+    text-align: center;
+    margin: 20px 10px 0 0px;
 }
 
 

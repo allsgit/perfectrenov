@@ -7,8 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Perfect Rénovation</title>
 </head>
 
@@ -18,8 +17,10 @@
     <div class="main-container">
         <header>
             <div class="logo">
-                <span class="underline"><strong>Perfect</strong></span> <span class="underline-2">Renovation</span>
-                <h2>carrelage - peinture - maçonnerie</h2>
+                <a href="/index.html">
+                    <span class="underline"><strong>Perfect</strong></span> <span class="underline-2">Renovation</span>
+                    <h2>carrelage - peinture - maçonnerie</h2>
+                </a>
             </div>
             <div class="hamb">
 
@@ -29,16 +30,17 @@
                 </hamb>
 
                 <div class="resp-menu">
-                    <img src="/image1/close-button-png-30230.png" class="close2" alt="">
+                    <img src="/image1/close-button-png-30230.png" class="close2" alt="bouton fermer menu">
                     <ul class="responsiv-menu-show">
+
+                        <li>
+                            <a href="/index.html">Accueil</a>
+                        </li>
                         <li>
                             <a href="/services.html">Nos services</a>
                         </li>
                         <li>
-                            <a href="#">Notre société</a>
-                        </li>
-                        <li>
-                            <a href="/contact.html">Nous contacter</a>
+                            <a href="contact.html">Nous contacter</a>
                         </li>
 
                     </ul>
@@ -47,21 +49,23 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="/services.html">Nos services</a>
+                            <a href="/index.html">Accueil</a>
                         </li>
                         <li>
-                            <a href="#">Notre société</a>
+                            <a href="/services.html">Nos services</a>
                         </li>
                         <li>
                             <a href="contact.html">Nous contacter</a>
                         </li>
                     </ul>
                 </nav>
+            </div>
 
         </header>
 
         <div class="postheader">
-            <h3>" Depuis plus de 15 ans, Perfect Renovation est à votre service dans vos travaux de rénovation peinture,
+            <h3>" Avec une expertise de plus de 20 ans, Perfect Renovation est à votre service dans vos travaux de
+                rénovation peinture,
                 pose de carrelage, et maçonnerie.
                 <br>
                 Nous mettons notre expertise au service de vos projets "
@@ -70,7 +74,8 @@
                 <button class="number">
                     <a class="num" href="tel:0623557196">Devis gratuit <br> Nous contacter <br><br> 06 23 55 71 96</a>
                 </button>
-                <img src="image1/shower-389273.jpg" alt="douche dans un style italien avec du carrelage de couleur grise">
+                <img src="image1/shower-389273.jpg"
+                    alt="douche dans un style italien avec du carrelage de couleur grise">
             </div>
         </div>
         <main>
@@ -107,7 +112,8 @@
             <section class="our-project">
                 <div class="carrousel">
                     <div class="thumbnail-1">
-                        <img src="image1/salle de bain.JPG" alt="salle de bain avec un style italien, les carreaux sont jaune orangé">
+                        <img src="image1/salle de bain.JPG"
+                            alt="salle de bain avec un style italien, les carreaux sont jaune orangé">
                     </div>
                     <div class="thumbnail-1">
                         <img src="image1/IMG_2086.jpeg" alt="grande piscine carrelé dans un style naturel">
@@ -122,7 +128,7 @@
                         <img src="image1/IMG_1624.jpeg" alt="carlage de salle de bain en mosaïque">
                     </div>
                     <div class="thumbnail-1">
-                        <img src="image1/IMG_2350.jpeg" alt="ssalle d'eau avec evier en pierre et carrelage mosaïque">
+                        <img src="image1/IMG_2350.jpeg" alt="salle d'eau avec evier en pierre et carrelage mosaïque">
                     </div>
                     <div class="thumbnail-1">
                         <img src="image1/IMG_2788.jpeg" alt="baignoire avec carrelage gris de style contemporain">
@@ -136,23 +142,29 @@
             <ul>
                 <h5>Informations</h5>
                 <li>
-                    <i class="fas fa-swatchbook"></i> <a href="#">Nos services</a>
+                    <a href="/index.html">Accueil</a>
                 </li>
                 <li>
-                    <i class="far fa-building"></i></i> <a href="#">Notre société</a>
+                    <a href="/services.html">Nos services</a>
                 </li>
                 <li>
-                    <i class="far fa-paper-plane"></i> <a href="#">Nous contacter</a>
+                    <a href="contact.html">Nous contacter</a>
                 </li>
             </ul>
             <div class="adress">
-                <h3>PERFECT RENOVATION </h3><span>| 42 rue de Cercié 35485 Cercié | </span>
-                <span>tel: 0623557196 - 0478589758</span>
+                <h3>PERFECT RENOVATION 2021</h3><span>| 42 rue de Cercié 35485 Cercié | </span>
+                <span>tel: 07-62-88-10-42</span>
             </div>
-            <div class="siret">Siret N°52753530600015</div>
+            <div class="siret">SIRET enregistré au N°52753530600023</div>
         </footer>
     </div>
 </body>
 <script src="script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("user_mWex3vPzIwW7IkJAe9oYV");
+    })();
+</script>
 
 </html>

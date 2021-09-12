@@ -53,6 +53,9 @@
         margin: 0 auto;
         width: 150px;
         height: 50px;
+        background-color: $gold;
+        border-radius: 10px;
+        margin-left: 275px;
     }
 }
 .info-contact{
@@ -71,4 +74,10 @@
         margin: 10px;
         
     }
+}
+.envoi-reussi{
+    font-size: 30px;
+    color: green;
+    text-align: center;
+    margin: 20px 0 0 79px;
 }
