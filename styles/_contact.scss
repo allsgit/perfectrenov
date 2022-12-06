@@ -1,0 +1,96 @@
+
+@import "./responsive";
+
+.contact-bloc{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 30px 0;
+    background-image: radial-gradient(circle at center center, transparent,rgb(255,255,255)),linear-gradient(309deg, rgba(90, 90, 90,0.05) 0%, rgba(90, 90, 90,0.05) 50%,rgba(206, 206, 206,0.05) 50%, rgba(206, 206, 206,0.05) 100%),linear-gradient(39deg, rgba(13, 13, 13,0.05) 0%, rgba(13, 13, 13,0.05) 50%,rgba(189, 189, 189,0.05) 50%, rgba(189, 189, 189,0.05) 100%),linear-gradient(144deg, rgba(249, 249, 249,0.05) 0%, rgba(249, 249, 249,0.05) 50%,rgba(111, 111, 111,0.05) 50%, rgba(111, 111, 111,0.05) 100%),linear-gradient(166deg, rgba(231, 231, 231,0.05) 0%, rgba(231, 231, 231,0.05) 50%,rgba(220, 220, 220,0.05) 50%, rgba(220, 220, 220,0.05) 100%),linear-gradient(212deg, rgba(80, 80, 80,0.05) 0%, rgba(80, 80, 80,0.05) 50%,rgba(243, 243, 243,0.05) 50%, rgba(243, 243, 243,0.05) 100%),radial-gradient(circle at center center, hsl(107,19%,100%),hsl(107,19%,100%));      
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 34%;
+    margin-right: 50px;
+
+
+    .firstname, .lastname, .mail, .user-message{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    p{
+        font-size: 1.5em;
+        flex-wrap: wrap;
+    }
+    #usermsg{
+        height: 250px;
+        font-family: "roboto";
+        background-color: rgb(243, 241, 241);
+        font-size: 25px;
+        text-align: left;
+        padding-left:0;
+        padding-top:0;
+        padding-bottom:0.4em;
+        padding-right: 0.4em;
+        width: 400px;
+        height: 200px;
+
+  
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        background-color: rgb(219, 219, 219);
+        border-radius: 5px;
+        border: none;
+        margin: 15px 0px;
+        color: black;
+    }
+    .send{
+        font-size: 20px;
+        margin: 0 auto;
+        width: 150px;
+        height: 50px;
+        background-color: $gold;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        color: white;
+    }
+}
+.info-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+
+    p{
+        font-size: 1.4em;
+    }
+}
+.ul-contact {
+    margin-top: 10px;
+    .li-contact {
+        list-style-type: none;
+        font-size: 1.3em;
+        margin: 10px;
+        
+    }
+}
+.envoi-reussi{
+    font-size: 30px;
+    color: green;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
